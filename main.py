@@ -26,7 +26,10 @@ class Handler(RequestHandler):
     def future_result_callback(self, future):
         print 'future result callback....'
         print future.result()
-
+        #
+        # print {'a': 1}
+        #
+       
 
 def main():
     pool = ThreadPoolExecutor(max_workers=16)
